@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.ShoppingActivity">
+
+
+    <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        custom:activeBgColor="@android:color/holo_blue_dark"
+        custom:activeTextColor="@android:color/white"
+        custom:inactiveBgColor="@android:color/white"
+        custom:inactiveTextColor="@android:color/black"
+        custom:separatorColor="@color/gray_very_light"
+        custom:textToggleCenter="AED"
+        custom:textToggleLeft="INR"
+        custom:textToggleRight="SAR"
+        custom:toggleWidth="90dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggle"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textStyle="bold"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <TextView
+        android:id="@+id/txt_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_check_your_connection"
+        android:visibility="gone" />
+
+</RelativeLayout>

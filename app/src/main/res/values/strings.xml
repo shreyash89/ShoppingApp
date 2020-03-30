@@ -1,0 +1,12 @@
+<!--
+  ~ /**
+  ~  * Created by Shreyash Mohta on 30/3/20 3:34 PM
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 30/3/20 12:43 PM
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">ShoppingApp</string>
+    <string name="app_check_your_connection">Please check your connection</string>
+</resources>
