@@ -9,6 +9,7 @@
 
     <belka.us.androidtoggleswitch.widgets.ToggleSwitch
         android:id="@+id/toggle"
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -26,6 +27,7 @@
 
     <TextView
         android:id="@+id/tv_title"
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/toggle"

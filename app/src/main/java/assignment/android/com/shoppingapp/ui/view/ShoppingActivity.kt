@@ -58,9 +58,10 @@ class ShoppingActivity : AppCompatActivity() {
 
         viewModel.result.observe(this, Observer {
 
-
             getCurrencies(it.conversion)
 
+            toggle.visibility = View.VISIBLE
+            tv_title.visibility = View.VISIBLE
             recycler_view.adapter = ShoppingAdapter(this, it.products, "INR")
             tv_title.text = it.title
 
